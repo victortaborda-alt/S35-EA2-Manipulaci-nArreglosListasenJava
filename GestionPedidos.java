@@ -71,24 +71,12 @@ public class GestionPedidos {
             }
 
             switch (opcion) {
-                case 1:
-                    registrarPedido();
-                    break;
-                case 2:
-                    deshacer();
-                    break;
-                case 3:
-                    rehacer();
-                    break;
-                case 4:
-                    mostrarPedidoActual();
-                    break;
-                case 0:
-                    System.out.println("Saliendo del sistema...");
-                    break;
-                default:
-                    System.out.println("Opcion invalida");
-                    break;
+                case 1 -> registrarPedido();
+                case 2 -> deshacer();
+                case 3 -> rehacer();
+                case 4 -> mostrarPedidoActual();
+                case 0 -> System.out.println("Saliendo del sistema...");
+                default -> System.out.println("Opcion invalida");
             }
         } while (opcion != 0);
     }
