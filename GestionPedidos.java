@@ -51,6 +51,16 @@ public class GestionPedidos {
         System.out.println("Pedido actual: " + principal.peek());
     }
 
+    public void mostrarTodosLosPedidos() {
+        if (principal.isEmpty()) {
+            System.out.println("No hay pedidos registrados.");
+            return;
+        }
+
+        System.out.println("\n--- Todos los pedidos ---");
+        principal.mostrarTodos();
+    }
+
     public void menu() {
         int opcion;
 
@@ -60,6 +70,7 @@ public class GestionPedidos {
             System.out.println("2. Deshacer");
             System.out.println("3. Rehacer");
             System.out.println("4. Mostrar Pedido Actual");
+            System.out.println("5. Mostrar Todos los Pedidos");
             System.out.println("0. Salir");
             System.out.print("Seleccione una opcion: ");
 
@@ -75,6 +86,7 @@ public class GestionPedidos {
                 case 2 -> deshacer();
                 case 3 -> rehacer();
                 case 4 -> mostrarPedidoActual();
+                case 5 -> mostrarTodosLosPedidos();
                 case 0 -> System.out.println("Saliendo del sistema...");
                 default -> System.out.println("Opcion invalida");
             }

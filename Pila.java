@@ -41,4 +41,15 @@ public class Pila {
     public boolean isEmpty() {
         return cima == null;
     }
+
+    public void mostrarTodos() {
+        Nodo actual = cima;
+        int numero = 1;
+
+        while (actual != null) {
+            System.out.println(numero + ". " + actual.pizza);
+            actual = actual.siguiente;
+            numero++;
+        }
+    }
 }
