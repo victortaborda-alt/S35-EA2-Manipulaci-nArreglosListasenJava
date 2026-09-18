@@ -29,3 +29,13 @@ java Main
 ```
 
 Los archivos compilados `.class` están excluidos del repositorio mediante `.gitignore`.
+
+## Link del repositorio
+
+https://github.com/victortaborda-alt/S35-EA2-Manipulaci-nArreglosListasenJava.git
+
+## Link video drive
+
+https://drive.google.com/file/d/1o9gpuTZ9Wx7vQt-hhMIk4KTJiLKCwlBr/view?usp=drive_link
+
+
